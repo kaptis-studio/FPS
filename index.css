@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 :root{
-    --background: rgb(0,0,0);
-    --secondary: rgb(44, 135, 255);
-    --text-primary: rgb(255, 255, 255);
+    --background: rgb(228, 228, 228);
+    --secondary: rgb(255, 140, 0);
+    --text-primary: rgb(43, 43, 43);
     --text-tertiary: rgb(117, 117, 117);
 
 }
@@ -149,9 +149,6 @@ header table {
     width:100%;
     border:2vh solid var(--background);
 }
-#top_part tr td{
-    width:50%;
-}
 #about {
     width:84% !important;
     height:95vh;
@@ -189,11 +186,13 @@ header table {
     background:var(--secondary);
 }
 
-#rightImage {
-    width:100%;
+#heroImage {
+    width:100vw;
     height:95vh;
-    border-radius: 20px;
-    background:url("assets/earth.png") center center;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -10;
+    position: absolute;
+    background:url("assets/testhero.png") center center;
     background-size:cover;
     background-repeat:no-repeat;
 }
@@ -351,7 +350,6 @@ button:focus {
         border:0px;
     }
     #top_part tr td{
-        width:100%;
         text-align:center;
     }
     #about {
