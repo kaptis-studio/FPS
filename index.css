@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 :root{
-    --background: rgb(228, 228, 228);
+    --background: rgba(73,78,86,255);
     --secondary: rgb(255, 140, 0);
-    --text-primary: rgb(43, 43, 43);
-    --text-tertiary: rgb(117, 117, 117);
+    --text-primary: rgb(255, 255, 255);
+    --text-tertiary: rgb(159, 159, 159);
 
 }
 body {
@@ -17,6 +17,7 @@ body {
     scroll-behavior: smooth;
     background-color: var(--background);
     color: var(--text-primary);
+    letter-spacing: 2px;
 }
 button {
     font-size: 16px;
@@ -159,7 +160,7 @@ header table {
     padding:0px 8%;
 }
 #about h1 {
-    font-size:45px;
+    font-size:42px;
     word-wrap:break-word;
 }
 #about table {
@@ -192,7 +193,8 @@ header table {
     top: 0; left: 0; right: 0; bottom: 0;
     z-index: -10;
     position: absolute;
-    background:url("assets/testhero.png") center center;
+    background:url("assets/hero.png") center center;
+    opacity: 0.5;
     background-size:cover;
     background-repeat:no-repeat;
 }
